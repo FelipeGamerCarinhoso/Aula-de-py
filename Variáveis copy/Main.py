@@ -1,19 +1,11 @@
 def main():
-    altura = 2.10
-    idade = 1800
-    isCasado = False
-    sexo = "Masculino"
-    nome = "FelipeGamerCarinhoso"
-    peso = 8709
-    cpf = "888.777,666-55" 
-
-    print("O ", nome ,"mede ", altura, "m de altura, tem ", idade, "anos de idade" )
-    print("É do sexo", sexo,"pesa,", peso, "e seu cpf", cpf)
-
-    if isCasado:
-        print("O ", nome, "É casado")
-    else: 
-        print("O ", nome, "NÃO É CASADO :")
-    return 0
-main()
-
+    idade=int(input("Qual a sua idade? novinha."))
+   
+    if idade >= 18:
+        print("Entrada liberada, safada.")
+    elif idade >= 16:
+        acom=input("VocÊ está acompanhada?  ")
+        if acom == "sim" or acom == "Sim":
+            print("Uma hora nn vai estar.")
+            
+    
