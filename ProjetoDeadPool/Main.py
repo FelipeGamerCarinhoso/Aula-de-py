@@ -1,12 +1,17 @@
-import random 
 def main():
-    numAle = random.randint(1 , 75)
+  quantAlunos = int(input("Digite a quantidade de alunos."))
 
-    num = 0
+  while quantAlunos < 1:
+    print("Número inválido, digite denovo.")
+    quantAlunos = int(input("Digite a quantidade de alunos."))
 
-    tentativas = 0 
-    while num != numAle:
-       num = int (input("Digite um número: "))
+  nomes = [""] * quantAlunos
 
-        if num > numAle:
-          print("O numero é menor")
+  i = 0
+
+  while i in range(len(nomes)):
+    nomes[i] = input("Digite o nome do aluno: ")
+    i += 1 
+  print(nomes)
+  return 0
+main()
